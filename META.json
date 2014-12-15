@@ -57,7 +57,7 @@
    "provides" : {
       "Plack::Middleware::Bootstrap" : {
          "file" : "lib/Plack/Middleware/Bootstrap.pm",
-         "version" : "0.01"
+         "version" : "0.02"
       }
    },
    "release_status" : "stable",
@@ -71,7 +71,7 @@
          "web" : "https://github.com/hitode909/Plack-Middleware-Bootstrap"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_authority" : "cpan:HITODE",
    "x_contributors" : [
       "hitode909 <hitode909@gmail.com>"

@@ -3,7 +3,7 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.01";
+our $VERSION = "0.02";
 
 use parent qw(Plack::Middleware);
 use Plack::Util ();
@@ -31,8 +31,8 @@ sub call {
             $tree->store_comments(1);
             $tree->parse_content($content);
 
-            my $head = join "\n", map { $_->as_HTML(q{&<>'"}, '', {}) } $tree->findnodes('//head')->[0]->content_list;
-            my $body = join "\n", map { $_->as_HTML(q{&<>'"}, '', {}) } $tree->findnodes('//body')->[0]->content_list;
+            my $head = join "\n", map { ref($_) ? $_->as_HTML(q{&<>'"}, '', {}) : $_ } $tree->findnodes('//head')->[0]->content_list;
+            my $body = join "\n", map { ref($_) ? $_->as_HTML(q{&<>'"}, '', {}) : $_ } $tree->findnodes('//body')->[0]->content_list;
 
             my $renderer = Text::MicroTemplate::DataSection->new(
                 escape_func => undef

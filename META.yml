@@ -26,7 +26,7 @@ no_index:
 provides:
   Plack::Middleware::Bootstrap:
     file: lib/Plack/Middleware/Bootstrap.pm
-    version: '0.01'
+    version: '0.02'
 requires:
   HTML::TreeBuilder::XPath: '0'
   Plack: '0'
@@ -36,7 +36,7 @@ resources:
   bugtracker: https://github.com/hitode909/Plack-Middleware-Bootstrap/issues
   homepage: https://github.com/hitode909/Plack-Middleware-Bootstrap
   repository: git://github.com/hitode909/Plack-Middleware-Bootstrap.git
-version: '0.01'
+version: '0.02'
 x_authority: cpan:HITODE
 x_contributors:
   - 'hitode909 <hitode909@gmail.com>'
