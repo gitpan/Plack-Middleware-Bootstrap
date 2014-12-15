@@ -1,0 +1,42 @@
+---
+abstract: 'A Plack Middleware to wrap simple HTML with Botstrap design template'
+author:
+  - 'This library is free software; you can redistribute it and/or modify'
+build_requires:
+  Test::More: '0.98'
+configure_requires:
+  Module::Build::Tiny: '0.035'
+dynamic_config: 0
+generated_by: 'Minilla/v2.1.1, CPAN::Meta::Converter version 2.133380'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: '1.4'
+name: Plack-Middleware-Bootstrap
+no_index:
+  directory:
+    - t
+    - xt
+    - inc
+    - share
+    - eg
+    - examples
+    - author
+    - builder
+provides:
+  Plack::Middleware::Bootstrap:
+    file: lib/Plack/Middleware/Bootstrap.pm
+    version: '0.01'
+requires:
+  HTML::TreeBuilder::XPath: '0'
+  Plack: '0'
+  Text::MicroTemplate::DataSection: '0'
+  perl: '5.008001'
+resources:
+  bugtracker: https://github.com/hitode909/Plack-Middleware-Bootstrap/issues
+  homepage: https://github.com/hitode909/Plack-Middleware-Bootstrap
+  repository: git://github.com/hitode909/Plack-Middleware-Bootstrap.git
+version: '0.01'
+x_authority: cpan:HITODE
+x_contributors:
+  - 'hitode909 <hitode909@gmail.com>'
