@@ -3,7 +3,7 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.03";
+our $VERSION = "0.04";
 
 use parent qw(Plack::Middleware);
 use Plack::Util ();
@@ -86,7 +86,7 @@ Plack::Middleware::Bootstrap - A Plack Middleware to prettify simple HTML with B
         return [
             200,
             [ 'Content-Type' => 'text/html' ],
-            [ "<title>Hello!</title><h1>Hello</h1>\n<p>World!</p>" ]
+            [ "<head><title>Hello!</title></head><body><h1>Hello</h1>\n<p>World!</p></body>" ]
         ];
     };
     builder {
