@@ -3,7 +3,7 @@ use 5.008001;
 use strict;
 use warnings;
 
-our $VERSION = "0.04";
+our $VERSION = "0.05";
 
 use parent qw(Plack::Middleware);
 use Plack::Util ();
@@ -76,7 +76,7 @@ __END__
 
 =head1 NAME
 
-Plack::Middleware::Bootstrap - A Plack Middleware to prettify simple HTML with Botstrap design template
+Plack::Middleware::Bootstrap - A Plack Middleware to prettify simple HTML with Bootstrap design template
 
 =head1 SYNOPSIS
 
@@ -125,7 +125,7 @@ And you will get
 
 =head1 DESCRIPTION
 
-Plack::Middleware::Bootstrap pretrifies HTML with Bootstrap design template.
+Plack::Middleware::Bootstrap pretifies HTML with Bootstrap design template.
 
 Plack::Middleware::Bootstrap provides better design to simple HTML.
 
